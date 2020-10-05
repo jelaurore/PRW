@@ -66,3 +66,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+### Week one Install Done
+Use the create-react-app feature to make a new application.
+Include the three types of exports in your application.
+In your comments explain why you would use each type of export.
