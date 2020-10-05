@@ -3,7 +3,14 @@ import React from 'react';
 // Dummy component
 const Header = () => {
   return(
-    <div>Header</div>
+    <header style={styles.container}>Header</header>
   )
 }
 export default Header;
+
+const styles = {
+  container: {
+    backgroundColor: 'lavender',
+    display: 'flex' 
+  }
+}
