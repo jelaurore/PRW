@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Timi Recipe</title>
+</head>
+<body>
+  <header>
+    <!-- Logo -->
+    <p id="logo">
+      <a href="index.html">
+        <img src="images/logo-white.png" alt="timi recipe logo">
+      </a>
+    </p>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li class="current">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Menu</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Form-->
+      <form id="recipe-form"> 
+        <ul> 
+          <li> 
+            <label for="name">Recipe Name:</label> 
+            <input type="text" id="name" name="user_recipe_name"> 
+          </li> 
+          <li> 
+            <label for="category">Category:</label> 
+            <input type="text" id="catego" name="user_recipe_category"> 
+          </li> 
+          <li> 
+            <label for="description">Description:</label> 
+            <textarea id="description" name="user_description"></textarea> 
+          </li> 
+          <li class="button">
+            <button type="submit">Add Recipe</button>
+          </li>
+        </ul> 
+      </form>
+
+    <section id="banner">
+      <h1 class="hide_heading">timi_recipe</h1>
+    </section>
+                                            
+  </header>
+
+  <!--Categories-->
+  <section id="category_color">
+    <h2 class="hide_heading">recipe_category</h2>
+  </section>
+  <section id="category">
+    <h2 class="hide_heading">Choose by Category</h2>
+
+    <article id="article-delete">
+      <p>
+        <h3 class="recipe-category">Breakfast</h3>
+      </p>
+      
+      <p>
+        <img src="images/soup.jpg" alt="Soup picture">
+      </p>
+      <h4>
+        Soup with Almond
+      </h4>
+      <p>
+        Generally served warm or hot (but may be cool or cold), 
+        that is made by combining ingredients of meat or vegetables with stock, or water.
+      </p>
+        <button class="delete" id="delete">Delete</button>
+    </article>
+    
+    <article id="article-delete">
+      <p>
+        <h3 class="recipe-category">Lunch</h3>
+      </p>
+      
+      <p>
+        <img src="images/sandwich.jpg" alt="Sandwitch picture">
+      </p>
+      <h4>Tahini Sandwitch</h4>
+      <p>
+        Including chicken salad sandwiches, egg sandwiches, turkey sandwiches, 
+        Reubens and more.
+      </p>
+      <button class="delete" id="delete">Delete</button>
+
+    </article>
+
+    <article id="article-delete">
+      <p>
+        <h3 class="recipe-category">Dinner</h3>
+      </p>
+      <p>
+        <img src="images/steak.jpg" alt="Steak picture">
+      </p>
+      <h4>Asparagus Well Done Steak</h4>
+      <p>
+        Baste with garlic thyme butter as it cooks! 
+        It makes the nost of great quality
+      </p>
+      <button class="delete" id="delete">Delete</button>
+    </article>
+
+  </section>
+
+
+
+
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
