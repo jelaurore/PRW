@@ -15,49 +15,41 @@ class UI {
     let htlm = '<p>'+
       '<h3 class="recipe-category">'+recipe.catego+'</h3></p>'
       +'<p><img src="images/steak.jpg" alt="Steak picture"></p>'
-    +'<h4>'+recipe.name+'</h4>'
-    +'<p>'+recipe.description+'</p>'
-    +'<button id="delete">Delete</button>'
+      +'<h4>'+recipe.name+'</h4>'
+      +'<p>'+recipe.description+'</p>'
+      +'<button id="delete">Delete</button>'
     
     article.innerHTML = htlm
-
-    
     list.appendChild(article);
   }
 
   deleteRecipe(target) {
-// Delete recipe article
-if (target.className === 'delete') {
-  target.parentElement.remove();
-  }
+    // Delete recipe article
+    if (target.className === 'delete') {
+      target.parentElement.remove();
+    }
   }
 }
 
 document.getElementById('recipe-form').addEventListener('submit',function(e){
   //Get form value
-
-
   e.preventDefault();
 
-const name = document.getElementById('name').value,
-catego = document.getElementById('catego').value,
-description = document.getElementById('description').value
+  const name = document.getElementById('name').value,
+        catego = document.getElementById('catego').value,
+        description = document.getElementById('description').value
+  const recipe = new Recipe(name, catego, description);
 
-const recipe = new Recipe(name, catego, description);
+  //instatiate ui
+  const ui = new UI();
 
-//instatiate ui
-const ui = new UI();
-
-//add recipe to
-ui.addRecipeToList(recipe);
+  //add recipe to
+  ui.addRecipeToList(recipe);
 });
 
 //Event for delete
 document.getElementById('category').addEventListener('click', function(e){
-
   const ui = new UI();
-  
-  ui.deleteRecipe(e.target);
-  
-    e.preventDefault();
-  })
+        ui.deleteRecipe(e.target);
+        e.preventDefault();
+})
