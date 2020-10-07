@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Export from './components/Export'
 import Classes from './components/Class'
-import Consts from './components/Const'
+import Consts from './components/Consts'
 
 
 class  App extends Component {
