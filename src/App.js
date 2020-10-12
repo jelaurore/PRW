@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
 //import Main from './components/Main';
-import Ads from './components/Post/Ads/Ads';
+import Ads from './components/Ads/Ads';
 import Post from './components/Post/Post';
 //import { FaSearch } from 'react-icons/fa';
 import MyForm from './components/myForm/MyForm';
+import Header from './components/Header';
+import Nav from './components/Nav';
+
 
 class App extends Component {
 
@@ -54,22 +57,17 @@ deletePost = (id) => {
 
     return (
       <div className="App">
-
-        <div className="app_header">
-          <h2 className="app_headerTitle">Facepost</h2>
-          <input type="text" placeholder="Search" className="search"></input>
-        </div>
-          <Ads />
-        <h4>News Feed</h4>
-        <h4>Messages</h4>
-        <h4>Watch</h4>
-        <MyForm addPost={this.addPost}/>
-        {
-          this.state.posts.map((post) => (
-            <Post key={post.id} post={post} deletePost={this.deletePost}/>
-          ))
-        }
-        
+        <Header />
+        <Nav />
+        <div>
+          <MyForm addPost={this.addPost}/>
+          {
+            this.state.posts.map((post) => (
+              <Post key={post.id} post={post} deletePost={this.deletePost}/>
+            ))
+          }
+          </div>
+        <Ads />
       </div>
     );
   }
