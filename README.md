@@ -66,3 +66,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Installation
+I'm using material ui
+https://material-ui.com/
+
+Install Material-UI's source files via npm. We take care of injecting the CSS needed.
+$ npm install @material-ui/core
+or use a CDN.
+Load the default Roboto font.
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?f
+
+### Usage
+Material-UI components work without any additional setup, and don't pollute the global scope.
+import React from 'react';
+import { Button } from '@material-ui/core';
+
+function App() {
+  return <Button color="primary">Hello World</Button>;
+}
