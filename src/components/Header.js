@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBeer } from 'react-icons/fa';
+import {NavLink} from 'react-router-dom';
 
 // Dummy component
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
       <input type="text" placeholder="Search" className="search"/>
       <div style={styles.icons}>
         <button>icon</button>
-        <button>settings</button>
+        <NavLink to='/Settings'>settings</NavLink>
       </div>
     </header>
   )
