@@ -1,15 +1,17 @@
 import React from 'react';
-import { FaBeer } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { AiFillSetting } from 'react-icons/ai';
+import { CgProfile} from 'react-icons/cg';
 
 // Dummy component
 const Header = () => {
   return(
     <header style={styles.container}>
-      <h2 style={styles.h2}>Facepost <FaBeer/></h2>
+      <h2 style={styles.h2}>Facepost <FaInstagram/></h2>
       <input type="text" placeholder="Search" className="search"/>
       <div style={styles.icons}>
-        <button>icon</button>
-        <button>settings</button>
+        <button><CgProfile/></button>
+        <button><AiFillSetting/></button>
       </div>
     </header>
   )

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './MyForm.css';
-//Answer this question for me.  Why did you use the export on line 4 vs. a Class or Const?
+
 export class MyForm extends Component {
 
   state = {

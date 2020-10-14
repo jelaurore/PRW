@@ -7,15 +7,15 @@ class Ads extends Component {
     ads: [{
       adTitle: 'Title',
       adDescription: 'description',
-      //adImageUrl: require('./images/1.jpg')
+      adImageUrl: require('../img/1.jpeg')
     },{
       adTitle: 'Title',
       adDescription: 'description2',
-      //adImageUrl: require('./images/1.jpg')
+      adImageUrl: require('../img/2.jpeg')
     },{
       adTitle: 'Title',
       adDescription: 'description3',
-      //adImageUrl: require('./images/1.jpg')
+      adImageUrl: require('../img/3.jpeg')
     }]
     
   }
