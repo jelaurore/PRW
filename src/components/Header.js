@@ -13,6 +13,7 @@ const Header = () => {
       <div style={styles.icons}>
         <button><CgProfile/></button>
         <button><AiFillSetting/></button>
+        <button>icon</button>
         <NavLink to='/Settings'>settings</NavLink>
       </div>
     </header>

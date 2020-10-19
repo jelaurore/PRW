@@ -10,7 +10,7 @@ const Routes = () => {
   return(
     <section>
       <Switch>
-      <Route exact path='/' component={NewsFeed}/>
+        <Route exact path='/' component={NewsFeed}/>
         <Route exact path='/NewsFeed' component={NewsFeed}/>
         <Route exact path='/Messages' component={Messages}/>
         <Route exact path='/Watch' component={Watch}/>
