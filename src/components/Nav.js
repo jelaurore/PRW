@@ -1,11 +1,12 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 const Nav = () => {
   return(
     <nav style={styles.container}>
-      <button style={styles.btn}>New Feeds</button>
-      <button>Messages</button>
-      <button>Watch</button>
+      <NavLink to='/NewsFeed' style={styles.btn}>New Feeds</NavLink>
+      <NavLink to='/Messages'>Messages</NavLink>
+      <NavLink to='/Watch'>Watch</NavLink>
     </nav>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import { AiFillSetting } from 'react-icons/ai';
 import { CgProfile} from 'react-icons/cg';
+import {NavLink} from 'react-router-dom';
 
 // Dummy component
 const Header = () => {
@@ -12,6 +13,7 @@ const Header = () => {
       <div style={styles.icons}>
         <button><CgProfile/></button>
         <button><AiFillSetting/></button>
+        <NavLink to='/Settings'>settings</NavLink>
       </div>
     </header>
   )

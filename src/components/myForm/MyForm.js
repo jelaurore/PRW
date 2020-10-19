@@ -18,6 +18,7 @@ export class MyForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.addPost(this.state)
+    e.target.reset();
   }
 
   render() {
